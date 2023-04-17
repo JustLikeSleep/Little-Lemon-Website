@@ -1,38 +1,129 @@
-.App {
-  text-align: center;
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+ .nav-bar {
+  display: grid;
+  grid-template-columns: repeat(2, auto);
+  justify-items: center;
+  margin-top: 10px;
+  margin-bottom: 5px;
+ }
+
+ .nav-logo {
+  justify-self: center;
+ }
+
+main {
+  background-color: #495E57;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+footer {
+  background-color: lightgray;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.nav-bar a {
+  text-decoration: none;
+  color: black;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+ul {
   display: flex;
-  flex-direction: column;
-  align-items: center;
+  flex-direction: row;
+  list-style: none;
+}
+
+li {
+  padding: 5px;
+}
+
+section {
+  display: grid;
+  grid-template-columns: repeat(2, 500px);
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  padding-top: 20px;
+  padding-left: 30px;
 }
 
-.App-link {
-  color: #61dafb;
+.spec-btn {
+  display: flex;
+  background-color: #FFFFFF;
+  justify-content: center;
+  gap: 550px ;
+  padding-top: 50px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.spec-btn button {
+  background-color: #F4CE14;
+  color: #181717;
+  padding: 10px;
+  border: none;
+  font-family: inherit;
+  border-radius: 10px ;
 }
+
+.spec-btn button:hover{
+  background-color: #495E57;
+  color: #FFFFFF;
+}
+
+.card-sec {
+  display: flex;
+  background-color: #FFFFFF;
+}
+
+.border {
+  background-color: rgb(238, 234, 234);
+  justify-content: center;
+  border-radius: 10px;
+  margin: 30px;
+  padding: 20px;
+  font-size: small;
+  width: 200px;
+}
+
+.border img {
+  width: 100%;
+}
+
+.box3 img {
+  object-fit: fill;
+}
+
+.summary {
+  padding-left: 90px;
+}
+
+.summary button {
+  background-color: #F4CE14;
+  color: #181717;
+  padding: 10px;
+  border: none;
+  font-family: inherit;
+  border-radius: 10px ;
+  margin-top: 80px;
+  margin-bottom: 80px;
+}
+
+.summary button:hover{
+  background-color: #FFFFFF;
+}
+
+.summary h2 {
+  color: #F4CE14;
+}
+
+.summary p {
+  color: #FFFFFF;
+}
+
+.summary img {
+  height: 300px;
+  width: 250px;
+  border-radius: 20px;
+}
+
+@media only screen and (max-width: 480px) {
+  /* styles for devices with a maximum screen width of 480px */
+  }
